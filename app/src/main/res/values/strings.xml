@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">hw7.2.1</string>
+    <string name="text">ввод данных</string>
+    <string name="button">найти</string>
+    <string name="empty">введите координаты или название места, которое хотите найти</string>
+    <string name="coordinate">geo:</string>
+    <string name="place">geo:?q=</string>
+</resources>
