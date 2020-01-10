@@ -38,8 +38,11 @@ public class MainActivity extends AppCompatActivity {
         if ("".equals(strInfo)) {
             Toast.makeText(this, getString(R.string.empty), Toast.LENGTH_SHORT).show();
         } else {
+            boolean charBoolean = false;
             char[] chars = strInfo.toCharArray();
-            boolean charBoolean = Character.isLetter(chars[0]);
+            for (char element: chars) {
+                charBoolean = Character.isLetter(element);
+            }
             if (charBoolean == true) {
                 intent.setData(Uri.parse(getString(R.string.place) + strInfo));
             } else {
